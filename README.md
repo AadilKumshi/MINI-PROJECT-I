@@ -1,2 +1,1 @@
-# NewsYork
-Mini Project I
+# MINI PROJECT I
