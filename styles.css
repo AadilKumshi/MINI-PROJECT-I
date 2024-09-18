@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-.login-container {
+.login-container, .signup-container {
     width: 350px;
     padding: 40px;
     background-color: white;
@@ -17,7 +17,7 @@ body {
     border-radius: 8px;
 }
 
-.login-container h1 {
+h1 {
     font-size: 2.5rem;
     margin-bottom: 30px;
 }
@@ -32,7 +32,7 @@ body {
     background-color: #fafafa;
 }
 
-.login-btn {
+.login-btn, .signup-btn {
     width: 100%;
     padding: 10px;
     background-color: #0095f6;
@@ -44,21 +44,21 @@ body {
     margin-top: 10px;
 }
 
-.login-btn:hover {
+.login-btn:hover, .signup-btn:hover {
     background-color: #007bb5;
 }
 
-.signup-text {
+.signup-text, .login-text {
     margin-top: 20px;
     font-size: 0.9rem;
 }
 
-.signup-text a {
+.signup-text a, .login-text a {
     color: #0095f6;
     text-decoration: none;
 }
 
-.signup-text a:hover {
+.signup-text a:hover, .login-text a:hover {
     text-decoration: underline;
 }
 
@@ -82,3 +82,4 @@ body {
 .divider::after {
     margin-left: 10px;
 }
+
