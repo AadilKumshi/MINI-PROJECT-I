@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="login-container">
+        <img src="/logo.png" alt="Logo" class="logo"> 
+        <h1>NewsYork</h1>
+        <form id="login-form">
+            <input type="email" id="login-email" class="input-field" placeholder="Email" required>
+            <input type="password" id="login-password" class="input-field" placeholder="Password" required>
+            <button type="submit" class="login-btn">Log In</button>
+        </form>
+        <div class="divider">OR</div>
+        <p class="signup-text">Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+
+    <script type="module">
+        import { handleLogin } from './auth.js';
+        handleLogin();
+    </script>
+</body>
+</html>
+
+
