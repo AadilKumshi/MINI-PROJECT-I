@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsYork Homepage</title>
+    <link rel="stylesheet" href="homepagestyle.css">
+</head>
+<body>
+    <header>
+        <div class="left-header">
+            <button id="toggle-sidebar">☰</button>
+            <div class="logo">
+                <img src="/logo.jpg" alt="Logo" width="40">
+            </div>
+        </div>
+        <nav class="top-nav">
+            <a href="#" onclick="fetchNews('politics')">Politics</a>
+            <a href="#" onclick="fetchNews('business')">Business</a>
+            <a href="#" onclick="fetchNews('sports')">Sports</a>
+            <a href="#" onclick="fetchNews('entertainment')">Entertainment</a>
+            <a href="#" onclick="fetchNews('health')">Health</a>
+            <a href="#" onclick="fetchNews('technology')">Technology</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search" onkeypress="searchNews(event)">
+        </div>
+        <div class="user-profile">
+            <div class="bell-icon">
+                <img src="/bell-regular-24.png" alt="Notification" width="25">
+            </div>
+            <div class="settings-icon">
+                <img src="/cog-solid-24.png" alt="Settings" width="25">
+            </div>
+        </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trivia</a></li>
+            <li><a href="#">People's Voice</a></li>
+            <li><a href="#">Submissions</a></li>
+            <li><a href="#">Bookmarks</a></li>
+            <li><a href="#">Editorial Guidelines</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy & Security</a></li>
+        </ul>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+        <section id="news-container">
+            <!-- News articles will be inserted here -->
+            <div class="article">
+                <img src="/news-image.jpg" alt="News Image">
+                <h3>Sample News Title</h3>
+                <p>Sample description of the news article...</p>
+                <a href="#">Read more</a>
+
+                <!-- Added Section for Upvote, Downvote, Comment, Share -->
+                <div class="news-options">
+                    <button class="upvote">Upvote</button>
+                    <button class="downvote">Downvote</button>
+                    <button class="discuss">Discuss</button>
+                    <button class="share">Share</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
