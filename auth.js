@@ -4,13 +4,13 @@ import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } f
 
 // Your Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyARGleD8t5FkDupzLTRd7w0n2JPdQqn_6E",
-    authDomain: "newsyork.firebaseapp.com",
-    projectId: "newsyork",
-    storageBucket: "newsyork.appspot.com",
-    messagingSenderId: "425662736970",
-    appId: "1:425662736970:web:46adf96a0f017b60ed54b3",
-    measurementId: "G-ETBYP08T34"
+    apiKey: "YOUR_API_KEY",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
 };
 
 const app = initializeApp(firebaseConfig);
